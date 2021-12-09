@@ -15,68 +15,60 @@
 <body>
     <main>
         <section class="main-section">
-            <div class="left">
-                <h2>Current Game</h2>
-                <div id="current-game-container">
-
-                </div>
-
-
-                <div class="form-and-buttons">
-                    <form class="name-form" id="name-form"> 
+            <div class="beginning">
+                <div class="left">
+                    <form>
                         <label>
-                            Team one name
-                            <input name="team-one" />
+                            Question
+                            <input name="the-question"/>
                         </label>
                         <label>
-                            Team two name
-                            <input name="team-two" />
+                            Choice 1
+                            <input name="the-choice-1"/>
                         </label>
-                        <button>Name teams</button>
+                        <label>
+                            Choice 2
+                            <input name = "the-choice-3"/>
+                        </label>
+
+                        <button>Start Survey</button>
                     </form>
-                    
-                    <div class="buttons">
-                        <div class="top-buttons">
-                            <div class="left-buttons">
-                                <h3 id="team-one-name">Team One</h3>
-                                <button id="team-one-add-button">
-                                    Add
-                                </button>
-                                <button id="team-one-subtract-button" class="undo">
-                                    Subtract
-                                </button>
-        
+                    <div>
+                        <div>
+                            <div>
+                                <button id="choice-1-add">Choose choice 1</button>
+                                <button id="choice-2-add">Choose choice 2</button>
                             </div>
-                            <div class="right-buttons">
-                                <h3 id="team-two-name">Team Two</h3>
-                                <button id="team-two-add-button">
-                                    Add
-                                </button> 
-                                <button id="team-two-subtract-button" class="undo">
-                                    Subtract
-                                </button>    
+                            <div>
+                                <button id="choice-1-rescind">Rescind choice 1</button>
+                                <button id="choice-2-rescind">Rescind choice 2</button>
                             </div>
-            
                         </div>
-                        <div class="bottom-buttons">
-                            <button id="finish-game-button">
-                                Finish Game
-                            </button>    
+                        <button id="close-survey">Close survey</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Current survey</p>
+                    <p id="survey-question"></p>
+                    <div class="choices">
+                        <div id="choice-1">
+                            <p id="choice-1-label"></p>
+                            <p id="choice-1-tally"></p>
+                        </div>
+                        <div id="choice-2">
+                            <p id="choice-2-label"></p>
+                            <p id="choice-2-tally"></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <div>
-                    <h2>Past Games</h2>
-                </div>
-                <div id="past-games-container">
-    
+            <div class="bottom">
+                <h2>Past Survey's</h2>
+                <div class="past-surveys">
+
                 </div>
             </div>
-
-
-
+        </div>
 
         </section>
     </main>
