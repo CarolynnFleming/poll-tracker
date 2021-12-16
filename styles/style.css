@@ -20,6 +20,10 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(../assets/man-mind.jpeg);
+    background-size: cover;
+    text-align: center;
+    color: tomato;
 }
 
 main {
@@ -28,11 +32,15 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-    height: 100%;
 }
 
 section {
     background-color: var(--color5);
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
@@ -53,5 +61,35 @@ footer {
     justify-content: flex-end;
     background-color: white;
     box-shadow: var(--shadow);
+}
+
+label {
+    display: block;
+}
+
+form {
+    border: solid 3px skyblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.beginning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left {
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+}
+
+.bottom {
+    width: 100%;
+    border-top: solid 3px skyblue;
 }
 
