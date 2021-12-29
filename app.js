@@ -27,9 +27,9 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
 
-    inqury = data.get('survey-question');
-    choiceALabel = data.get('choice-a-label');
-    choiceBLabel = data.get('choice-b-label');
+    inqury = data.get('the-question');
+    choiceALabel = data.get('the-choice-a');
+    choiceBLabel = data.get('the-choice-b');
     form.reset();
 
     displayCurrentSurvey();
